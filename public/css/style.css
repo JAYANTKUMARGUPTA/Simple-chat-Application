@@ -38,13 +38,14 @@ body {
 
 /* Header */
 .chat-header {
-  background: var(--bg-color);
-  padding: 20px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 20px;
-  color: var(--primary-color);
-  box-shadow: var(--inner-shadow);
+  background: var(--bg-gradient);
+  color: #1707f5;
+  padding: 10px 16px; /* reduced padding */
+  font-size: 16px;    /* optional: reduce font size */
+  min-height: 48px;   /* optional: fixed compact height */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Main Content */
