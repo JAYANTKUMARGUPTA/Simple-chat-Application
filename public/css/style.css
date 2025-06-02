@@ -25,12 +25,15 @@ body {
 
 /* Chat Container */
 .chat-container {
-  max-width: 1100px;
+  max-width: 900px;        /* Reduced from 1100px */
+  height: 650px;           /* Optional fixed height */
   margin: auto;
   border-radius: var(--radius);
   box-shadow: var(--box-shadow);
   background: var(--bg-color);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
