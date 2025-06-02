@@ -26,7 +26,7 @@ body {
 /* Chat Container */
 .chat-container {
   max-width: 900px;        /* Reduced from 1100px */
-  height: 650px;           /* Optional fixed height */
+  height: 680px;           /* Optional fixed height */
   margin: auto;
   border-radius: var(--radius);
   box-shadow: var(--box-shadow);
@@ -40,7 +40,7 @@ body {
 .chat-header {
   background: var(--bg-gradient);
   color: #1707f5;
-  padding: 10px 16px; /* reduced padding */
+  padding: 22px 18px; /* reduced padding */
   font-size: 16px;    /* optional: reduce font size */
   min-height: 48px;   /* optional: fixed compact height */
   display: flex;
