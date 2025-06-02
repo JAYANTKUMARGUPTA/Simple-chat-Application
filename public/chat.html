@@ -33,7 +33,7 @@
       </a>
     </header>
 
-    <main class="chat-main">
+    <!-- <main class="chat-main">
       <aside class="chat-sidebar" aria-label="Chat Room Sidebar">
         <h3><i class="fas fa-comments"></i> Room Name:</h3>
         <h2 id="room-name" tabindex="0"></h2>
@@ -43,7 +43,7 @@
       </aside>
 
       <section class="chat-messages" aria-label="Messages Area" id="chat-messages" tabindex="0"></section>
-    </main>
+    </main> -->
 
     <div class="chat-form-container">
       <form id="chat-form" aria-label="Send a message">
@@ -63,6 +63,17 @@
     </div>
   </div>
 
+    <main class="chat-main">
+      <aside class="chat-sidebar" aria-label="Chat Room Sidebar">
+        <h3><i class="fas fa-comments"></i> Room Name:</h3>
+        <h2 id="room-name" tabindex="0"></h2>
+
+        <h3><i class="fas fa-user-friends"></i> Current Users</h3>
+        <ul id="users" aria-live="polite" aria-label="List of active users"></ul>
+      </aside>
+
+      <section class="chat-messages" aria-label="Messages Area" id="chat-messages" tabindex="0"></section>
+    </main>
   <!-- Libraries -->
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
