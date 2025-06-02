@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="description" content="Join a room to chat with fellow fans on the SimpleChat application." />
+
+	<!-- Font Awesome for Icons -->
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+		integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+		crossorigin="anonymous"
+	/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+		rel="stylesheet"
+	/>
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+
+	<title>Join | SimpleChat Application</title>
+</head>
+<body>
+	<div class="join-container">
+		<header class="join-header">
+			<h1><i class="fas fa-comments"></i> SimpleChat Application</h1>
+			<p>Connect with your favorite fan groups instantly!</p>
+		</header>
+
+		<main class="join-main">
+			<form action="chat.html" method="GET" aria-label="Join Chat Form">
+				<div class="form-control">
+					<label for="username">Username <span aria-hidden="true">*</span></label>
+					<input
+						type="text"
+						name="username"
+						id="username"
+						placeholder="Enter a username"
+						required
+						autocomplete="nickname"
+						autofocus
+						aria-required="true"
+					/>
+				</div>
+
+				<div class="form-control">
+					<label for="room">Select Chat Room <span aria-hidden="true">*</span></label>
+					<select name="room" id="room" required aria-required="true">
+						<option value="" disabled selected>Please select a room...</option>
+							<option value="Pixel Palace">Pixel Palace</option>
+							<option value="Code & Chill">Code & Chill</option>
+							<option value="CineVerse Lounge">CineVerse Lounge</option>
+							<option value="Wizards & Warriors">Wizards & Warriors</option>
+							<option value="The Fandom Forge">The Fandom Forge</option>
+							<option value="Legends Lounge">Legends Lounge</option>
+							<option value="Geek Galaxy">Geek Galaxy</option>
+							<option value="Fantasy Realm">Fantasy Realm</option>
+							<option value="Nerdy Nexus">Nerdy Nexus</option>
+							<option value="Quantum Chat">Quantum Chat</option>
+					</select>
+				</div>
+
+				<button type="submit" class="btn" aria-label="Join Chat">Join Now</button>
+			</form>
+		</main>
+	</div>
+</body>
+</html>

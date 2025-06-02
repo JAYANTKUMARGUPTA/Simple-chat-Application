@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="SimpleChat - Real-time group chat application." />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+    crossorigin="anonymous"
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Chat Room | SimpleChat</title>
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1><i class="fas fa-comments"></i> SimpleChat</h1>
+      <a id="leave-btn" class="leavebtn" href="index.html" aria-label="Leave Chat Room">
+        <i class="fas fa-door-open"></i> Leave Room
+      </a>
+    </header>
+
+    <main class="chat-main">
+      <aside class="chat-sidebar" aria-label="Chat Room Sidebar">
+        <h3><i class="fas fa-comments"></i> Room Name:</h3>
+        <h2 id="room-name" tabindex="0"></h2>
+
+        <h3><i class="fas fa-user-friends"></i> Current Users</h3>
+        <ul id="users" aria-live="polite" aria-label="List of active users"></ul>
+      </aside>
+
+      <section class="chat-messages" aria-label="Messages Area" id="chat-messages" tabindex="0"></section>
+    </main>
+
+    <div class="chat-form-container">
+      <form id="chat-form" aria-label="Send a message">
+        <label for="msg" class="sr-only">Type your message</label>
+        <input
+          id="msg"
+          type="text"
+          placeholder="Enter your message..."
+          required
+          autocomplete="off"
+          aria-required="true"
+        />
+        <button type="submit" class="btn" aria-label="Send Message">
+          <i class="fas fa-reply"></i> Send
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Libraries -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+    integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+    crossorigin="anonymous"
+  ></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
